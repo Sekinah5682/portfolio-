@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sekinah Saliu</title>
+<meta name="description" content="Get in touch with Sekinah Saliu, B.Sc. Cybersecurity student at Miva Open University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-brand" aria-label="Home">
+      <span class="mark" aria-hidden="true"></span> Sekinah Saliu
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">☀</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="container page-head reveal">
+    <span class="eyebrow">Contact</span>
+    <h1>Get in touch</h1>
+    <p>Questions, internship opportunities, or just want to talk cybersecurity? Send a message below.</p>
+  </section>
+
+  <section class="container">
+    <div class="contact-layout">
+
+      <!-- ============ CONTACT FORM ============ -->
+      <div class="panel reveal">
+        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+        <form id="contactForm" novalidate>
+          <div class="field" style="margin-bottom:1.1rem;">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="field" style="margin-bottom:1.1rem;">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" placeholder="you@example.com">
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="field" style="margin-bottom:1.1rem;">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" name="phone" placeholder="Digits only, e.g. 08012345678">
+            <span class="field-error" id="phoneError"></span>
+          </div>
+          <div class="field" style="margin-bottom:1.1rem;">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="What would you like to say?"></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        </form>
+      </div>
+
+      <!-- ============ CONTACT INFO ============ -->
+      <div class="reveal">
+        <div class="contact-info-item">
+          <span class="ico" aria-hidden="true">@</span>
+          <div>
+            <h4>Email</h4>
+            <p>sekinahsaliu@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="ico" aria-hidden="true">#</span>
+          <div>
+            <h4>Location</h4>
+            <p>Ogun, Nigeria</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="ico" aria-hidden="true">◎</span>
+          <div>
+            <h4>Availability</h4>
+            <p>Open to internships and collaborative student projects.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="accent">◆</span> Sekinah Saliu · B.Sc. Cybersecurity · Miva Open University</div>
+      <ul class="social-row">
+        <li><a href="https://github.com/sekinah5682" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/sekinah" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <p class="copyright">Copyright 2026 Sekinah Saliu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
