@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner — Sekinah Saliu</title>
+  <meta name="description" content="An interactive academic planner for adding, completing, and deleting coursework tasks, built with vanilla JavaScript." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="loader" data-loader>
+    <div class="loader__mark">
+      <span>SYNCING TASKS…</span>
+      <div class="loader__bar"></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" data-progress-bar></div>
+
+  <aside class="spine" aria-hidden="true">
+    <span class="spine__label">COS 106 — FIELD NOTES</span>
+    <div class="spine__ticks">
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+    </div>
+    <span class="spine__label">04 / PLANNER</span>
+  </aside>
+
+  <header class="site-header" data-site-header>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-mark" aria-hidden="true">S</span>
+        Sekinah Saliu
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false" aria-label="Switch to dark mode">☾</button>
+        <button class="nav__toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <header class="page-header wrap">
+      <p class="eyebrow reveal">Academic planner</p>
+      <h1 class="reveal">Keep coursework from slipping through the cracks</h1>
+      <p class="reveal">Add a task, set its due date and priority, then check it off when it's
+        done. Everything is saved to this browser automatically, so your list is still here next
+        time you visit.</p>
+    </header>
+
+    <section class="section--tight">
+      <div class="wrap">
+        <div class="planner reveal">
+
+          <form data-planner-form novalidate>
+            <div class="planner__form">
+              <div class="field">
+                <label for="taskTitle">Task</label>
+                <input type="text" id="taskTitle" name="taskTitle" placeholder="e.g. Finish CSS Grid exercise" required />
+              </div>
+              <div class="field">
+                <label for="taskDue">Due date</label>
+                <input type="date" id="taskDue" name="taskDue" />
+              </div>
+              <div class="field">
+                <label for="taskPriority">Priority</label>
+                <select id="taskPriority" name="taskPriority">
+                  <option value="low">Low</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+              <div class="field field--submit">
+                <button class="btn btn--primary" type="submit">Add task</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="planner__meta">
+            <span data-task-count>Loading tasks…</span>
+            <div class="planner__filters" role="group" aria-label="Filter tasks">
+              <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="chip" type="button" data-filter="active" aria-pressed="false">Active</button>
+              <button class="chip" type="button" data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+          </div>
+
+          <ul class="task-list" data-task-list aria-live="polite"></ul>
+
+          <p class="empty-state" data-empty-state style="display:none;">
+            Nothing here yet — add your first task above.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section--muted">
+      <div class="wrap grid-2">
+        <div class="reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>Built with plain JavaScript</h2>
+          <p>This planner stores your tasks as an array of objects, renders them to the page with
+            the DOM API, and saves the array to <code>localStorage</code> after every change —
+            no frameworks or external libraries involved.</p>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Tips</p>
+          <ul>
+            <li>Click the circular checkbox to mark a task complete.</li>
+            <li>Use the filter chips to focus on what's still outstanding.</li>
+            <li>Tasks persist per browser — clearing site data will reset them.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Sekinah Saliu</h4>
+          <p>Cybersecurity student at MIVA Open University, building this site as a
+            living academic portfolio for COS 106 — Introduction to Web Technologies.</p>
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GH</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Ln</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4>Site map</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li>saliusekinah@gmail.com</li>
+            <li>+234 8088955697</li>
+            <li>Enugu, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Sekinah Saliu. Built for COS 106.</span>
+        <span>Designed &amp; coded with HTML, CSS &amp; vanilla JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-to-top type="button" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
