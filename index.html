@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sekinah Saliu — Cybersecurity Student &amp; Aspiring SOC Analyst</title>
+  <meta name="description" content="Personal academic portfolio of Sekinah Saliu, a 100 level Cybersecurity student at MIVA Open University, showcasing projects, skills, and an academic planner." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Loading screen -->
+  <div class="loader" data-loader>
+    <div class="loader__mark">
+      <span>COMPILING PORTFOLIO…</span>
+      <div class="loader__bar"></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" data-progress-bar></div>
+
+  <!-- Signature margin spine -->
+  <aside class="spine" aria-hidden="true">
+    <span class="spine__label">COS 106 — FIELD NOTES</span>
+    <div class="spine__ticks">
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+    </div>
+    <span class="spine__label">01 / HOME</span>
+  </aside>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" data-site-header>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-mark" aria-hidden="true">S</span>
+        Sekinah Saliu
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false" aria-label="Switch to dark mode">☾</button>
+        <button class="nav__toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__intro reveal">
+          <p class="hero__greeting">// welcome_message.log</p>
+          <p class="hero__type" data-typing='["Hi, I\'m Sekinah.", "I study Cybersecurity.", "I want to become a SOC analyst.", "Welcome to my portfolio."]'></p>
+
+          <h1>Turning lecture notes into <span class="accent">shipped code</span>.</h1>
+
+          <p class="hero__bio">
+            I'm a 100 level Cybersecurity student at MIVA Open University, currently deep in
+            COS 106 — Introduction to Web Technologies. This site is both my personal portfolio and
+            a working academic management tool: my projects, my skills, and the actual planner I use
+            to keep my coursework on track.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="projects.html">View my projects</a>
+            <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+          </div>
+
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-num">3</div>
+              <div class="hero__stat-label">Live projects</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">100 lvl</div>
+              <div class="hero__stat-label">Cybersecurity</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">6+</div>
+              <div class="hero__stat-label">Tools &amp; languages</div>
+            </div>
+          </div>
+
+          <div class="audio-card">
+            <div class="audio-card__icon" aria-hidden="true">♪</div>
+            <div class="audio-card__text">
+              <strong>Voice welcome note</strong>
+              <span>A short recorded hello — press play</span>
+            </div>
+            <audio controls preload="none">
+              <source src="assets/audio/welcome-chime.wav" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <div class="hero__portrait reveal">
+          <img src="assets/img/profile.svg" alt="Illustrated portrait of Sekinah Saliu, smiling, wearing glasses" width="400" height="400" />
+          <div class="hero__portrait-tag">Sekinah Saliu · B.Sc. Cybersecurity, 100 level</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick bio -->
+    <section class="section--muted">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Brief biography</p>
+          <h2>A little about how I got here</h2>
+        </div>
+
+        <div class="grid-3 reveal-stagger">
+          <article class="card reveal" style="--i:0">
+            <h3>Where I started</h3>
+            <p>My interest in tech grew out of reading cybersecurity articles and following how
+              real-world breaches happen — that curiosity is what led me to enrol at MIVA.</p>
+          </article>
+          <article class="card reveal" style="--i:1">
+            <h3>What I'm doing now</h3>
+            <p>I'm building this portfolio as my COS 106 term project — combining semantic HTML,
+              responsive CSS, and vanilla JavaScript into one cohesive, hosted website.</p>
+          </article>
+          <article class="card reveal" style="--i:2">
+            <h3>Where I'm headed</h3>
+            <p>Long term, I want to work as a SOC analyst — monitoring, detecting, and responding
+              to security threats to keep organisations safe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation preview cards -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Explore the site</p>
+          <h2>Everything lives in one place</h2>
+          <p>This portfolio doubles as an academic management tool. Use the cards below — or the
+            navigation bar — to move around.</p>
+        </div>
+
+        <div class="grid-3 reveal-stagger">
+          <a class="card reveal" style="--i:0" href="about.html">
+            <h3>About Me →</h3>
+            <p>Education, career goals, technical skills, and the hobbies that keep me sane.</p>
+          </a>
+          <a class="card reveal" style="--i:1" href="projects.html">
+            <h3>Projects →</h3>
+            <p>Three original builds, from a task tracker to a browser-based quiz game.</p>
+          </a>
+          <a class="card reveal" style="--i:2" href="planner.html">
+            <h3>Academic Planner →</h3>
+            <p>A real, working task manager built with vanilla JavaScript and localStorage.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Sekinah Saliu</h4>
+          <p>Cybersecurity student at MIVA Open University, building this site as a
+            living academic portfolio for COS 106 — Introduction to Web Technologies.</p>
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GH</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Ln</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4>Site map</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li>sekinah.saliusaliu@gmail.com</li>
+            <li>+234 8088955697</li>
+            <li>Ogun, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Sekinah Saliu. Built for COS 106.</span>
+        <span>Designed &amp; coded with HTML, CSS &amp; vanilla JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-to-top type="button" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
