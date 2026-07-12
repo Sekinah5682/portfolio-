@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Sekinah Saliu</title>
+  <meta name="description" content="Get in touch with Sekinah Saliu via the contact form, email, or social media." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="loader" data-loader>
+    <div class="loader__mark">
+      <span>OPENING INBOX…</span>
+      <div class="loader__bar"></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" data-progress-bar></div>
+
+  <aside class="spine" aria-hidden="true">
+    <span class="spine__label">COS 106 — FIELD NOTES</span>
+    <div class="spine__ticks">
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+    </div>
+    <span class="spine__label">05 / CONTACT</span>
+  </aside>
+
+  <header class="site-header" data-site-header>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-mark" aria-hidden="true">S</span>
+        Sekinah Saliu
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false" aria-label="Switch to dark mode">☾</button>
+        <button class="nav__toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <header class="page-header wrap">
+      <p class="eyebrow reveal">Get in touch</p>
+      <h1 class="reveal">Let's talk about work, study, or both</h1>
+      <p class="reveal">Whether it's a collaboration, a question about this project, or feedback
+        on the site itself, the form below reaches me directly.</p>
+    </header>
+
+    <section class="section--tight">
+      <div class="wrap contact-grid">
+
+        <div class="reveal">
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">✉</div>
+            <div>
+              <strong>Email</strong>
+              <p>sekinah.saliu@example.edu</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">☎</div>
+            <div>
+              <strong>Phone</strong>
+              <p>+234 800 000 0000</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">⌖</div>
+            <div>
+              <strong>Location</strong>
+              <p>Enugu, Nigeria</p>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GH</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Ln</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">Tw</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="form-status" data-form-status role="alert"></div>
+
+          <form data-contact-form novalidate>
+            <div class="field">
+              <label for="contactName">Full name</label>
+              <input type="text" id="contactName" name="name" autocomplete="name" placeholder="e.g. Sekinah Saliu" required aria-describedby="nameError" />
+              <span class="field-error" id="nameError" data-field-error></span>
+            </div>
+
+            <div class="field">
+              <label for="contactEmail">Email address</label>
+              <input type="email" id="contactEmail" name="email" autocomplete="email" placeholder="e.g. sekinah.saliu@example.edu" required aria-describedby="emailError" />
+              <span class="field-error" id="emailError" data-field-error></span>
+            </div>
+
+            <div class="field">
+              <label for="contactPhone">Phone number</label>
+              <input type="tel" id="contactPhone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="e.g. 08001234567 (digits only)" required aria-describedby="phoneError" />
+              <span class="field-error" id="phoneError" data-field-error></span>
+            </div>
+
+            <div class="field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="e.g. Hi Sekinah, I'd love to connect about..." required aria-describedby="messageError"></textarea>
+              <span class="field-error" id="messageError" data-field-error></span>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Send message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Sekinah Saliu</h4>
+          <p>Cybersecurity student at MIVA Open University, building this site as a
+            living academic portfolio for COS 106 — Introduction to Web Technologies.</p>
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GH</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Ln</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4>Site map</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li>sekinah.saliu@example.edu</li>
+            <li>+234 8088955697</li>
+            <li>Ogun, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Sekinah Saliu. Built for COS 106.</span>
+        <span>Designed &amp; coded with HTML, CSS &amp; vanilla JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-to-top type="button" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
