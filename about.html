@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — Sekinah Saliu</title>
+  <meta name="description" content="Education, career aspirations, technical skills, and hobbies of Sekinah Saliu, a 100 level Cybersecurity student." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="loader" data-loader>
+    <div class="loader__mark">
+      <span>LOADING PROFILE…</span>
+      <div class="loader__bar"></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" data-progress-bar></div>
+
+  <aside class="spine" aria-hidden="true">
+    <span class="spine__label">COS 106 — FIELD NOTES</span>
+    <div class="spine__ticks">
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+    </div>
+    <span class="spine__label">02 / ABOUT</span>
+  </aside>
+
+  <header class="site-header" data-site-header>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-mark" aria-hidden="true">S</span>
+        Sekinah Saliu
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false" aria-label="Switch to dark mode">☾</button>
+        <button class="nav__toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <header class="page-header wrap">
+      <p class="eyebrow reveal">About me</p>
+      <h1 class="reveal">The story behind the code</h1>
+      <p class="reveal">My educational background, where I want my career to go, the tools I
+        reach for most, and how I spend time when I'm away from a keyboard.</p>
+
+      <div class="audio-card reveal">
+        <div class="audio-card__icon" aria-hidden="true">♪</div>
+        <div class="audio-card__text">
+          <strong>A quick audio introduction</strong>
+          <span>30-second voice note about this page</span>
+        </div>
+        <audio controls preload="none">
+          <source src="assets/audio/welcome-chime.wav" type="audio/wav" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </header>
+
+    <!-- Education -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Educational background</p>
+          <h2>Where I've studied</h2>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table>
+            <caption>A summary of my academic history, most recent first.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Institution</th>
+                <th scope="col">Programme</th>
+                <th scope="col">Period</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MIVA Open University</td>
+                <td>B.Sc. Cybersecurity</td>
+                <td>2026 — 2030 (expected)</td>
+                <td>In progress — 100 level</td>
+              </tr>
+              <tr>
+                <td>Government Secondary School, Enugu</td>
+                <td>Senior Secondary Certificate</td>
+                <td>2019 — 2025</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td>Self-directed study — security blogs &amp; MDN</td>
+                <td>Web &amp; Cybersecurity Fundamentals</td>
+                <td>2025 — Present</td>
+                <td>Ongoing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career aspirations -->
+    <section class="section--muted">
+      <div class="wrap grid-2">
+        <div class="reveal">
+          <p class="eyebrow">Career aspirations</p>
+          <h2>Where I'm headed</h2>
+          <p>I want to become a SOC (Security Operations Centre) analyst, monitoring networks and
+            responding to threats before they become incidents. In the next few years I'm aiming to:</p>
+          <ul>
+            <li>Complete my Cybersecurity degree with a strong foundation in networking and web technologies.</li>
+            <li>Earn entry-level security certifications alongside my coursework.</li>
+            <li>Land an internship or SOC trainee role monitoring live security alerts.</li>
+            <li>Keep building a habit of daily threat research and reading.</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Hobbies &amp; interests</p>
+          <h2>Off the keyboard</h2>
+          <ul>
+            <li>Reading tech articles, especially on emerging security threats.</li>
+            <li>Researching cybersecurity topics — attack techniques, breaches, and defences.</li>
+            <li>Following security researchers and analysts online.</li>
+            <li>Practising on beginner-friendly cybersecurity labs and challenges.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical skills -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Technical skills</p>
+          <h2>What I build with</h2>
+          <p>Proficiency levels below are self-assessed and updated each semester as I complete
+            new coursework and projects.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card reveal">
+            <div class="skill">
+              <div class="skill__top"><span>HTML5</span><span>92%</span></div>
+              <div class="skill__track"><div class="skill__fill" data-skill-fill="92"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__top"><span>CSS3 / Responsive Design</span><span>88%</span></div>
+              <div class="skill__track"><div class="skill__fill" data-skill-fill="88"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__top"><span>JavaScript (Vanilla)</span><span>78%</span></div>
+              <div class="skill__track"><div class="skill__fill" data-skill-fill="78"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__top"><span>Git &amp; GitHub</span><span>70%</span></div>
+              <div class="skill__track"><div class="skill__fill" data-skill-fill="70"></div></div>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Tools &amp; concepts I use often</h3>
+            <ul class="tag-list">
+              <li>Flexbox</li>
+              <li>CSS Grid</li>
+              <li>DOM APIs</li>
+              <li>Fetch / JSON</li>
+              <li>VS Code</li>
+              <li>Figma</li>
+              <li>GitHub Pages</li>
+              <li>Accessibility (WCAG)</li>
+              <li>Cybersecurity fundamentals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Sekinah Saliu</h4>
+          <p>Cybersecurity student at MIVA Open University, building this site as a
+            living academic portfolio for COS 106 — Introduction to Web Technologies.</p>
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GH</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Ln</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4>Site map</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li>saliusekinah@gmail.com</li>
+            <li>+234 8088955697</li>
+            <li>Ogun, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Sekinah Saliu. Built for COS 106.</span>
+        <span>Designed &amp; coded with HTML, CSS &amp; vanilla JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-to-top type="button" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
