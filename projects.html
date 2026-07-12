@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Sekinah Saliu</title>
+  <meta name="description" content="A selection of web development projects by Sekinah Saliu, including a task tracker, a weather dashboard, and a browser quiz game." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="loader" data-loader>
+    <div class="loader__mark">
+      <span>OPENING REPOSITORY…</span>
+      <div class="loader__bar"></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="progress-bar" data-progress-bar></div>
+
+  <aside class="spine" aria-hidden="true">
+    <span class="spine__label">COS 106 — FIELD NOTES</span>
+    <div class="spine__ticks">
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+      <span class="spine__tick"></span><span class="spine__tick"></span><span class="spine__tick"></span>
+    </div>
+    <span class="spine__label">03 / PROJECTS</span>
+  </aside>
+
+  <header class="site-header" data-site-header>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-mark" aria-hidden="true">S</span>
+        Sekinah Saliu
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="false" aria-label="Switch to dark mode">☾</button>
+        <button class="nav__toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <header class="page-header wrap">
+      <p class="eyebrow reveal">Selected work</p>
+      <h1 class="reveal">Three projects, three lessons</h1>
+      <p class="reveal">Each project below was built to practise a different part of the front-end
+        stack — from DOM manipulation to layout systems to working with structured data.</p>
+    </header>
+
+    <section>
+      <div class="wrap">
+        <div class="grid-3 reveal-stagger">
+
+          <article class="card project-card reveal" style="--i:0">
+            <div class="project-card__media">
+              <img src="assets/img/project-planner.svg" alt="Screenshot mockup of the Campus Task Tracker interface, showing a sidebar and a list of checkable tasks" width="600" height="400" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3>Campus Task Tracker</h3>
+              <p>A lightweight to-do app for coursework, built to practise DOM manipulation, event
+                delegation, and persisting state in the browser without a backend.</p>
+              <div class="project-card__tags">
+                <span>HTML5</span><span>CSS Grid</span><span>JavaScript</span>
+              </div>
+              <div class="project-card__links">
+                <a href="planner.html">Live demo →</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Source code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="--i:1">
+            <div class="project-card__media">
+              <img src="assets/img/project-weather.svg" alt="Screenshot mockup of the Campus Weather Dashboard showing current temperature and a five-day forecast" width="600" height="400" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3>Campus Weather Dashboard</h3>
+              <p>A responsive dashboard concept for checking the day's forecast between classes.
+                Focused on Flexbox layout, a cohesive colour system, and mobile-first design.</p>
+              <div class="project-card__tags">
+                <span>CSS3</span><span>Flexbox</span><span>Fetch API</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" aria-disabled="true">Live demo (simulated) →</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Source code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="--i:2">
+            <div class="project-card__media">
+              <img src="assets/img/project-quiz.svg" alt="Screenshot mockup of the Logic Loop quiz game showing a multiple-choice HTML question and a running score" width="600" height="400" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3>Logic Loop — Web Trivia Game</h3>
+              <p>A ten-question browser quiz about web fundamentals, built to practise arrays,
+                functions, conditional logic, and dynamic content updates in vanilla JavaScript.</p>
+              <div class="project-card__tags">
+                <span>JavaScript</span><span>Arrays</span><span>DOM Events</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" aria-disabled="true">Live demo (simulated) →</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Source code →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section--muted">
+      <div class="wrap text-center reveal">
+        <p class="eyebrow">More on GitHub</p>
+        <h2>Want to see the code behind these builds?</h2>
+        <p style="max-width:56ch;margin:0 auto 26px;">Every project on this page links back to its
+          repository. This whole portfolio is open-source too — feel free to fork it.</p>
+        <a class="btn btn--primary" href="https://github.com/" target="_blank" rel="noopener noreferrer">Visit my GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Sekinah Saliu</h4>
+          <p>Cybersecurity student at MIVA Open University, building this site as a
+            living academic portfolio for COS 106 — Introduction to Web Technologies.</p>
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GH</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Ln</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4>Site map</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li>saliusekinah@gmail.com</li>
+            <li>+234 8088955697</li>
+            <li>Ogun, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Sekinah Saliu. Built for COS 106.</span>
+        <span>Designed &amp; coded with HTML, CSS &amp; vanilla JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-to-top type="button" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
